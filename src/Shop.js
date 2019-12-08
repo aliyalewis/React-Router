@@ -7,9 +7,9 @@ function Shop() {
     fetchItems();
   })
 
-  const fetchItems = async() => {
-    const data = await fetch("https://fortnite-public-api.theapinetwork.com/prod09/upcoming/get")
-    const items = await data.json()
+  const fetchItems = async () => {
+    const data = await fetch("https://dog.ceo/api/breeds/image/random");
+    const items = await data.json();
     
     console.log(items);
   }
